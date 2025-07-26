@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Course } from '../../model/Course';
 import { LearningServices } from '../../services/learning';
+import { StudentsComp } from '../estudents/estudents';
 
 @Component({
   selector: 'app-learning',
-  imports: [],
+  imports: [StudentsComp],
   templateUrl: './learning.html',
   styleUrl: './learning.css'
 })

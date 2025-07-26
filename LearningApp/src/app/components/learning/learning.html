@@ -19,11 +19,7 @@
                     </thead>
                     <tbody>
                         @for (item of learning.students; track $index){
-                            <tr>
-                                <td>{{item.id}}</td>
-                                <td>{{item.identification}}</td>
-                                <td>{{item.name}} {{item.surname}}</td>
-                            </tr>
+                            <tr estudents [item]="item"></tr>
                         }
                     </tbody>
                 </table>
